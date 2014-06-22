@@ -3,11 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Resume</title>
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+	<link rel="stylesheet" href="http://i.icomoon.io/public/temp/4eb06ff28a/UntitledProject2/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header class="clear">
-		<h1 class="hello_heading">Why,<br>hello there.</h1>
+		<div class="heading-container">
+			<h1 class="hello_heading">Why,<br>hello there.</h1>
+		</div>
 	</header>
 	<nav>
 	   <ul>
@@ -18,97 +23,119 @@
 	   </ul>
 	</nav>
 	<section class="block">
-		<div>
-			<h1>I'm Ryan.</h1>
+		<div class="intro-container">
+			<h1 class="intro_heading">I'm Ryan.</h1>
 		</div>
 		<div>
-			<p>Duis vitae enim nibh. Integer ipsum metus, suscipit et faucibus eu, adipiscing eget tortor. Mauris semper semper sem, at blandit sapien fermentum nec. Donec volutpat molestie lectus in laoreet. Vivamus pretium, sem eu.<p>
+			<p class="intro_text">Duis vitae enim nibh. Integer ipsum metus, suscipit et faucibus eu, adipiscing eget tortor. Mauris semper semper sem, at blandit sapien fermentum nec. Donec volutpat molestie lectus in laoreet. Vivamus pretium, sem eu.</p>
 		</div>
 	</section>
 	<section class="block">
 		<div class="section_header">
-			<h2>Interests & awards.<span></span></h2>
+			<h2>Interests & awards.</h2>
+			<span class="line"></span>
 		</div>
-		<div class="section_header">
-			<h2>My Skills.<span></span></h2>
-		</div>
-	</section>
-	<section class="block">
 		<div class="int_awards_items">
-			<ul>
-				<li>Feature award on <a href="http://onepagelove.com/bonjour" target="_blank">onepagelove.com</a></li>
-				<li>Music</li>
-				<li>Design</li>
-				<li>Games</li>
-				<li>Code</li>
+			<div><img src="/images/one-page-love-award.png;">
+				<p>Feature award on <a href="http://onepagelove.com/bonjour" target="_blank">onepagelove.com.</a></p></div>
+				<div class="icon-music"><p>Music</p></div>
+				<div class="icon-pencil"><p>Design</p></div>
+				<div class="icon-keyboard"><p>Games</p></div>
+				<div class="icon-tools"><p>Code</p></div>
 			</ul>
 		</div>
-		<div class="skill_items"> <!-- BEGGINING OF SKILLS -->
+	</section>
+	<section class="block">
+		<div class="section_header">
+			<h2>My skills.</h2>
+			<span class="line"></span>
+		</div>
+		<div> <!-- BEGGINING OF SKILLS -->
 			<div class="clear">
-				<p>HTML</p>
-				<ul class="skill">
-					<li class="fill"></li>
-					<li class="fill"></li>
-					<li class="fill"></li>
-					<li class="fill"></li>
-					<li></li>
-				</ul>
-				<p>CSS</p>
-				<ul class="skill">
-					<li class="fill"></li>
-					<li class="fill"></li>
-					<li class="fill"></li>
-					<li></li>
-					<li></li>
-				</ul>
-				<p>JS</p>
-				<ul class="skill">
-					<li class="fill"></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-				<p>Jquery</p>
-				<ul class="skill">
-					<li class="fill"></li>
-					<li class="fill"></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-				<p>Ps</p>
-				<ul class="skill">
-					<li class="fill"></li>
-					<li class="fill"></li>
-					<li class="fill"></li>
-					<li class="fill"></li>
-					<li class="fill"></li>
-				</ul>
-				<p>Ai</p>
-				<ul class="skill">
-					<li class="fill"></li>
-					<li class="fill"></li>
-					<li class="fill"></li>
-					<li class="fill"></li>
-					<li></li>
-				</ul>
-				<p>Id</p>
-				<ul class="skill">
-					<li class="fill"></li>
-					<li class="fill"></li>
-					<li class="fill"></li>
-					<li class="fill"></li>
-					<li></li>
-				</ul>
-				<p>An</p>
-				<ul class="skill">
-					<li class="fill"></li>
-					<li class="fill"></li>
-					<li class="fill"></li>
-					<li></li>
-					<li></li>
-				</ul>
+				<div class="left-skills">
+					<div class="skill_block">
+						<div class="title">HTML</div>
+						<ul class="skill">
+							<li class="fill"></li>
+							<li class="fill"></li>
+							<li class="fill"></li>
+							<li class="fill"></li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="skill_block">
+						<div class="title">CSS</div>
+						<ul class="skill">
+							<li class="fill"></li>
+							<li class="fill"></li>
+							<li class="fill"></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="skill_block">
+						<div class="title">JS</div>
+						<ul class="skill">
+							<li class="fill"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="skill_block">
+						<div class="title">Jquery</div>
+						<ul class="skill">
+							<li class="fill"></li>
+							<li class="fill"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+				</div>
+				</div>
+				<div class="right-skills">
+					<div class="skill_block">
+					<div class="title">Ps</div>
+					<ul class="skill">
+						<li class="fill"></li>
+						<li class="fill"></li>
+						<li class="fill"></li>
+						<li class="fill"></li>
+						<li class="fill"></li>
+					</ul>
+					</div>
+					<div class="skill_block">
+					<div class="title">Ai</div>
+					<ul class="skill">
+						<li class="fill"></li>
+						<li class="fill"></li>
+						<li class="fill"></li>
+						<li class="fill"></li>
+						<li></li>
+					</ul>
+					</div>
+					<div class="skill_block">
+					<div class="title">Id</div>
+					<ul class="skill">
+						<li class="fill"></li>
+						<li class="fill"></li>
+						<li class="fill"></li>
+						<li class="fill"></li>
+						<li></li>
+					</ul>
+					</div>
+					<div class="skill_block">
+					<div class="title">An</div>
+					<ul class="skill">
+						<li class="fill"></li>
+						<li class="fill"></li>
+						<li class="fill"></li>
+						<li></li>
+						<li></li>
+					</ul>
+					</div>
+				</div>
 			</div>
 		</div> <!-- END OF SKILLS -->
 	</section>
@@ -194,12 +221,14 @@
 		<div class="section_header">
 			<h2>Wanna connect more?<span></span></h2>
 			<ul class="social">
-				<li class="linkedin"></li>
-				<li class="twitter"></li>
-				<li class="facebook"></li>
-				<li class="google_plus"></li>
+				<li class="icon-linkedin"></li>
+				<li class="icon-twitter"></li>
+				<li class="icon-facebook"></li>
+				<li class="icon-googleplus"></li>
 			</ul>
 		</div>
 	</section>
+<script type="text/javascript" src="//use.typekit.net/vfm7hrj.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </body>
 </html>
