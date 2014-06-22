@@ -1,14 +1,21 @@
+
+
+
+
+
 /*=========================
 ICO MOON ICON FONTS
 ==========================*/
 
+
+
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-deb1zk');
-	src:url('fonts/icomoon.eot?#iefix-deb1zk') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-deb1zk') format('woff'),
-		url('fonts/icomoon.ttf?-deb1zk') format('truetype'),
-		url('fonts/icomoon.svg?-deb1zk#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?-je2g77');
+	src:url('../fonts/icomoon.eot?#iefix-je2g77') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-je2g77') format('woff'),
+		url('../fonts/icomoon.ttf?-je2g77') format('truetype'),
+		url('../fonts/icomoon.svg?-je2g77#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -82,7 +89,6 @@ GLOBAL
 }
 
 
-
 h1 {
 	margin: 0;
 }
@@ -95,6 +101,10 @@ h2 {
   margin: 0;
 }
 
+h3 {
+	font-size: 28px;
+}
+
 p {
 	margin: 0;
 }
@@ -104,6 +114,14 @@ p {
 	margin: 0 auto;
 }
 
+
+.social a img {
+	width: 28px;
+	height: 28px;
+	-moz-opacity: 0.80;         /* Mozilla extension */
+  -khtml-opacity: 0.80;        /* Konqueror extension (Safari 1.1)*/
+  opacity: 0.8;
+}
 
 /*=========================
 HEADING
@@ -116,7 +134,7 @@ HEADING
 
 .hello_heading  {
 	font-family: "adelle-sans",sans-serif;
-	font-size: 60px;
+	font-size: 59px;
 	line-height: 1.202;
 	font-weight: 700;
 }
@@ -178,9 +196,10 @@ INTRO CONTAINER
 	font-weight: 700;
 }
 .intro_text {
-  margin-top: 30px; 
+  margin-top: 45px; 
   font-size: 16px;
   font-family: "Adelle Sans";
+  text-align: justify;
 }
 
 /*=========================
@@ -201,7 +220,16 @@ INTRESTS & AWARDS
 }
 
 .int_awards_items{
-	margin-top: 30px;
+	margin-top: 45px;
+}
+
+.int_awards_items a {
+	text-decoration: none;
+}
+
+.int_awards_items a:hover {
+	border-bottom: 2px solid #313131;
+	padding-bottom: 4px;
 }
 
 .int_awards_items img {
@@ -217,7 +245,6 @@ INTRESTS & AWARDS
 }
 
 .int_awards_items div:nth-of-type(1) {
-	background-color: tomato;
 	display: block;
 }
 
@@ -226,17 +253,24 @@ INTRESTS & AWARDS
 	font-size: 18px;
 }
 
+
+
 .int_awards_items div:nth-of-type(2),
 .int_awards_items div:nth-of-type(3),
 .int_awards_items div:nth-of-type(4),
 .int_awards_items div:nth-of-type(5){
-	background-color: lightblue;
 	display: inline-block;
 	margin: 0 auto;
 	text-align: center;
-	width: 49.3%;
-	margin-top: 15px;
+	width: 49%;
+	margin-top: 40px;
 }
+
+.int_awards_items div:nth-of-type(2),
+.int_awards_items div:nth-of-type(3) {
+	margin-top: 50px;
+}
+
 
 .int_awards_items div:nth-of-type(2) p,
 .int_awards_items div:nth-of-type(3) p,
@@ -284,8 +318,8 @@ SKILLS
 	display: inline-block;
 	position: relative;
 	bottom: 7px;
-	width: 76px;
-	font-size: 20px;
+	width: 67px;
+	font-size: 18px;
 }
 
 
@@ -293,7 +327,7 @@ SKILLS
 	display: inline-block;
 	margin-left: 20px;
 	padding: 0;
-	margin: 20px 0 0 15px;
+	margin: 20px 0 0 4px;
 }
 
 .skill li {
@@ -331,12 +365,13 @@ EXPERIENCE
 .description_item {
 	font-size: 16px;
 	line-height: 22px;
+	text-align: justify;
 }
 
 
 
 /*=========================
-INTRO CONTAINER 
+EDUCATION
 ==========================*/
 
 .block:nth-of-type(8),
@@ -345,6 +380,44 @@ INTRO CONTAINER
 	margin: 54px auto 42px auto;
 }
 
+/*=========================
+SOCIAL
+==========================*/
+
+.social {
+	display: block;
+	padding: 0;
+	margin: 0 auto 50px auto;
+	text-align: center;
+}
+
+.line-three {
+  display: none;
+}
+
+.social a {
+	text-decoration: none;
+	list-style: none;
+	display: inline-block;
+	font-size: 34px;
+}
+
+.social a:hover {
+	border-bottom: 2px solid #313131;
+	padding-bottom: 10px;  
+}
+
+.social a:nth-of-type(1),
+.social a:nth-of-type(2),
+.social a:nth-of-type(3) {
+	margin-right: 17px;
+}
+
+.social a:nth-of-type(2),
+.social a:nth-of-type(3),
+.social a:nth-of-type(4) {
+	margin-left: 17px;
+}
 
 
 /*=========================
@@ -354,6 +427,12 @@ MEDIA QUERIES
 
 @media screen and (min-width: 540px) {
 
+
+/*=========================
+HEADING
+==========================*/
+
+
 .heading-container {
 	margin: 71px auto 0 auto;
 	width: 478px;
@@ -361,9 +440,14 @@ MEDIA QUERIES
 
 .hello_heading, .intro_heading {
 	font-family: "adelle-sans",sans-serif;
-	font-size: 90px;
+	font-size: 89px;
 	line-height: 1.202;
 }
+
+/*=========================
+NAV
+==========================*/
+
 
 nav {
 	width: 477px;
@@ -406,8 +490,33 @@ nav li a:hover {
 	margin: 0 auto;
 }
 
+
+
+/*=========================
+INTRO CONTAINER 
+==========================*/
+
+
+.intro_text {
+  margin-top: 35px; 
+  font-size: 18px;
+  font-family: "Adelle Sans";
+}
+
+
+/*=========================
+INTRESTS & AWARDS 
+==========================*/
+
+
+.block:nth-of-type(2) {
+	margin-top: 65px; 
+}
+
+
+
 .line {
-  width: 33%;
+  width: 159px;
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -416,23 +525,570 @@ nav li a:hover {
   border: 1px solid black;
 }
 
-.Donec_sodales_nulla_vel_ante_ultricies__a_conse {
-  font-size: 18px;
-  font-family: "Adelle Sans";
-  color: rgb(49, 49, 49);
-  line-height: 2.4;
-  text-align: justifyLeft;
-  position: absolute;
-  left: 81.846px;
-  top: 752.622px;
-  width: 474px;
-  height: 101px;
-  z-index: 20;
+.line-two {
+  width: 320px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  left: 10px;
+  top: -2px;
+  border: 1px solid black;
+}
+
+.int_awards_items div:nth-of-type(1) {
+	display: block;
+}
+
+.int_awards_items img {
+	display: inline-block;
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	width: 70px;
+
+}
+
+.int_awards_items div:nth-of-type(1) p {
+	display: inline-block;
+	font-size: 20px;
+	position: relative;
+	float: left;
+	margin-left: 15px;
+	top: 15px;
+}
+
+.icon-pencil:before {
+	left: 0px; 
+}
+
+.icon-music:before {
+	left: 0px; 
+}
+
+.int_awards_items div:nth-of-type(2),
+.int_awards_items div:nth-of-type(3),
+.int_awards_items div:nth-of-type(4),
+.int_awards_items div:nth-of-type(5) {
+	text-align: left;
+}
+
+.int_awards_items div:nth-of-type(2),
+.int_awards_items div:nth-of-type(3) {
+	margin-top: 50px;
+}
+
+
+.int_awards_items div:nth-of-type(2) p,
+.int_awards_items div:nth-of-type(3) p,
+.int_awards_items div:nth-of-type(4) p,
+.int_awards_items div:nth-of-type(5) p{
+	bottom: 14px;
+}
+.int_awards_items div:nth-of-type(2) p,
+.int_awards_items div:nth-of-type(3) p,
+.int_awards_items div:nth-of-type(4) p,
+.int_awards_items div:nth-of-type(5) p{
+	margin-left: 37px;
+}
+
+
+.int_awards_items [class^="icon"] { /*This controls the icon sizes within the intersets and awards section*/
+	font-size: 50px;
+}
+
+
+/*=========================
+SKILLS
+==========================*/
+
+.block:nth-of-type(3) {
+	margin: 65px auto 0 auto;
+}
+
+.title {
+	bottom: 13px;
+	font-size: 27px;
+}
+
+
+.skill {
+	margin-left: 9px;
+	margin: 25px 0 0 81px;
+}
+
+.skill li {
+	width: 49px;
+	height: 49px;
+	border-radius: 25px;
+	margin-right: 10px;
+}
+
+/*=========================
+EXPERIENCE
+==========================*/
+
+.block:nth-of-type(4) {
+	margin: 65px auto 0 auto;
+}
+
+.title_item {
+	font-size: 18px;
+}
+
+.description_item {
+	font-size: 18px;
+}
+
+.line-three, 
+.line-four {
+  width: 280px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  left: 10px;
+  top: -6px;
+  border: 1px solid black;
+}
+.line-four {
+  width: 295px;
+}
+
+
+/*=========================
+SOCIAL
+==========================*/
+
+.social {
+	display: block;
+	padding: 0;
+	margin: 0 auto 50px auto;
+	text-align: center;
+}
+
+h3 {
+	font-size: 34px;
+	display: block;
+	text-align: center;
+}
+
+
+.social a {
+	text-decoration: none;
+	list-style: none;
+	display: inline-block;
+	font-size: 34px;
+}
+
+.social a:hover {
+	border-bottom: 2px solid #313131;
+	padding-bottom: 4px;  
+}
+
+.social a:nth-of-type(1),
+.social a:nth-of-type(2),
+.social a:nth-of-type(3) {
+	margin-right: 17px;
+}
+
+.social a:nth-of-type(2),
+.social a:nth-of-type(3),
+.social a:nth-of-type(4) {
+	margin-left: 17px;
+}
+
+
+@media screen and (min-width: 1050px) {
+
+/*=========================
+GLOBAL
+==========================*/
+
+.block {
+	width: 976px;
+	display: block;
+}
+
+
+/*=========================
+HEADING
+==========================*/
+
+
+ header {
+ 	max-width: 1000px;
+ 	margin: 0 auto;
+ 	padding: 0;
+ }
+
+ .heading-container {
+  width: 500px;
+  display: inline-block;
+  position: relative;
+  right: -538px;
+  font-size: 85px;
+  margin: 85px 0 91px 0;
+  padding: 0;
+}
+
+
+/*=========================
+NAV
+==========================*/
+
+
+nav {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: table;
+  padding: 0;
+  margin: 0 auto;
+  
+}
+
+nav li:nth-child(1) {
+  border-top: none; /*This is neccesary to keep the borders clean, you turn of the style from the query above the reactivate it*/
+  border-left: 1px solid #313131;
+  border-top: 1px solid #313131;
+}
+
+nav li {
+  list-style: none;
+  display: table-cell;
+  border: none;
+  border-bottom: 1px solid #313131;
+  border-top: 1px solid #313131;
+  border-right: 1px solid #313131;  
+}
+
+nav li:nth-child(4) {
+  border-right: 1px solid #313131;
+}
+
+nav li a {
+  text-decoration: none;
+  display: block;
+  color: #313131;
+  padding: 12px 53px;
+  font-size: 19px;
+}
+
+nav li a:hover {
+  background: #313131;
+  color: white;
 }
 
 
 
-} /*END OF MEDIA QUERIES*/
+/*=========================
+INTRO CONTAINER 
+==========================*/
+
+.intro-container {
+	margin-top: 65px;
+}
+
+
+.intro_heading {
+	font-family: "adelle-sans",sans-serif;
+	font-size: 90px;
+	line-height: 1.202;
+	position: relative;
+	float: left;
+	display: inline-block;
+}
+
+.intro_text {
+  font-size: 16px;
+  font-family: "Adelle Sans";
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: 501px;
+  margin-left: 72px;
+  margin-top: 26px;
+}
+
+
+/*=========================
+INTRESTS & AWARDS 
+==========================*/
+
+h2 {
+	font-size: 24px;
+}
+
+
+.int_awards {
+	max-width: 375px;
+	float: left;
+}
+
+.line {
+  width: 149px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  left: 10px;
+  top: -3px;
+  border: 1px solid black;
+}
+
+.int_awards_items{
+	margin-top: 35px;
+}
+
+.int_awards_items div:nth-of-type(1) {
+	display: block;
+	margin: 0;
+}
+
+.int_awards_items img {
+	display: inline-block;
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	width: 70px;
+
+}
+
+.int_awards_items div:nth-of-type(1) p {
+	display: inline-block;
+	font-size: 16px;
+	position: relative;
+	float: left;
+	margin-left: 15px;
+	top: 20px;
+}
+
+.icon-pencil:before {
+	left: 0px; 
+}
+
+.icon-music:before {
+	left: 0px; 
+}
+
+.int_awards_items div:nth-of-type(2),
+.int_awards_items div:nth-of-type(3),
+.int_awards_items div:nth-of-type(4),
+.int_awards_items div:nth-of-type(5) {
+	text-align: left;
+	width: 49%;
+}
+
+.int_awards_items div:nth-of-type(2),
+.int_awards_items div:nth-of-type(3) {
+	margin-top: 50px;
+}
+
+
+.int_awards_items div:nth-of-type(2) p,
+.int_awards_items div:nth-of-type(3) p,
+.int_awards_items div:nth-of-type(4) p,
+.int_awards_items div:nth-of-type(5) p{
+	bottom: 10px;
+	font-size: 16px;
+}
+.int_awards_items div:nth-of-type(2) p,
+.int_awards_items div:nth-of-type(3) p,
+.int_awards_items div:nth-of-type(4) p,
+.int_awards_items div:nth-of-type(5) p{
+	margin-left: 30px;
+}
+
+
+.int_awards_items [class^="icon"] { /*This controls the icon sizes within the intersets and awards section*/
+	font-size: 35px;
+}
+
+
+/*=========================
+SKILLS
+==========================*/
+
+.block:nth-of-type(3) {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.myskills {
+	max-width: 502px;
+	float: left;
+	margin-left: 99px;
+}
+
+.line-two {
+  width: 387px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  left: 10px;
+  top: -3px;
+  border: 1px solid black;
+}
+
+.left-skills {
+	float: left;
+	display: inline-block;
+	margin-top: 28px;
+}
+
+.right-skills {
+	float: left;
+	display: inline-block;
+	margin-left: 22px;
+	margin-top: 28px;
+}
+
+.title {
+	bottom: 7px;
+	font-size: 16px;
+	width: 80px;
+}
+
+
+.skill {
+	margin: 21px 0 0 2px;
+}
+
+.skill li {
+	width: 26px;
+	height: 26px;
+	border-radius: 25px;
+	margin-right: 1px;
+	margin-top: 5px;
+}
+
+/*=========================
+EXPERIENCE & EDUCATION
+==========================*/
+
+.block:nth-of-type(4) {
+	max-width: 1000px;
+}
+
+
+.exp {
+	position: relative;
+	float: left;
+	width: 976px;
+	max-width: 976px;
+}
+
+.edu {
+	position: relative;
+	float: left;
+	width: 976px;
+	max-width: 976px;
+	margin-top: 50px; 
+}
+
+.line-three, 
+.line-four {
+  width: 834px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  left: 10px;
+  top: -2px;
+  border: 1px solid black;
+}
+
+.line-four {
+  width: 844px;
+}
+
+.title_item {
+	font-size: 18px;
+	float: left;
+	width: 354px;
+	font-weight: 400;
+}
+
+.description_item {
+	font-size: 18px;
+	float: left;
+	max-width: 503px;
+	margin-left: 115px;
+}
+
+/*=========================
+SOCIAL
+==========================*/
+
+body {
+	padding-bottom: 60px;
+}
+
+.block:nth-of-type(12) {
+	max-width: 1000px;
+	margin-bottom: 200px;
+}
+
+footer {
+	display:block;
+	max-width: 1000px;
+	height: 50px;
+	margin: 0 auto 100px 0;
+	padding: 0;
+}
+
+
+h3 {
+	font-size: 26px;
+	display: inline-block;
+	position: relative;
+	margin: 7px 0 0 481px;
+	float: left; 
+}
+
+.line-five {
+  width: 48px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  left: 6px;
+  top: -5px;
+  border: 1px solid black;
+  background-color: blue;
+}
+
+.social {
+	display: inline-block;
+	position: relative;
+	margin: 0px;
+	position: relative;
+	right: -10px;
+}
+
+.social a {
+	text-decoration: none;
+	list-style: none;
+	display: inline-block;
+	font-size: 28px;
+	margin-top: 5px;
+}
+
+.social a:nth-of-type(1),
+.social a:nth-of-type(2),
+.social a:nth-of-type(3) {
+	margin-right: 6px;
+}
+
+.social a:nth-of-type(2),
+.social a:nth-of-type(3),
+.social a:nth-of-type(4) {
+	margin-left: 6px;
+}
+
+}
+
+	} /*END OF MEDIA QUERIES*/
 
 
 
