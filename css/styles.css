@@ -1,0 +1,442 @@
+/*=========================
+ICO MOON ICON FONTS
+==========================*/
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-deb1zk');
+	src:url('fonts/icomoon.eot?#iefix-deb1zk') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-deb1zk') format('woff'),
+		url('fonts/icomoon.ttf?-deb1zk') format('truetype'),
+		url('fonts/icomoon.svg?-deb1zk#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil:before {
+	content: "\e600";
+	position: relative;
+	left: 15px; 
+}
+.icon-tools:before {
+	content: "\e603";
+}
+.icon-music:before {
+	content: "\e601";
+	position: relative;
+	left: -15px; 
+}
+.icon-keyboard:before {
+	content: "\e602";
+}
+.icon-twitter:before {
+	content: "\e605";
+}
+.icon-facebook:before {
+	content: "\e606";
+}
+.icon-googleplus:before {
+	content: "\e607";
+}
+.icon-linkedin:before {
+	content: "\e608";
+}
+
+
+
+/*=========================
+GLOBAL
+==========================*/
+
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+
+*, *:before, *:after {
+	color: #313131;
+	-webkit-font-smoothing: antialiased; /*This style is applied to all fonts to help smooth them out*/
+}
+
+.clear:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+
+
+h1 {
+	margin: 0;
+}
+
+h2 {
+  font-size: 34px;
+  font-family: "Adelle Sans";
+  font-weight: 700;
+  display: inline-block;
+  margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+.block {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+/*=========================
+HEADING
+==========================*/
+
+.heading-container {
+	margin: 71px auto 0 auto;
+	width: 80%;
+}
+
+.hello_heading  {
+	font-family: "adelle-sans",sans-serif;
+	font-size: 60px;
+	line-height: 1.202;
+	font-weight: 700;
+}
+
+
+
+/*=========================
+NAV
+==========================*/
+
+nav {
+	width: 80%;
+	margin: 65px auto 0 auto;
+	padding: 0;
+}
+
+nav ul {
+	padding: 0;
+}
+
+nav li {
+	display: block;
+	border-left: 2px solid;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    border-top: 0;
+    text-align: center;
+}
+
+nav li:nth-child(1) {
+    border-top: 2px solid;
+}
+
+nav li a {
+	padding: 18px;
+	display: block;
+	font-family: "adelle-sans",sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	background-color: #313131;
+	color: white; 
+}
+
+/*=========================
+INTRO CONTAINER 
+==========================*/
+
+.block:nth-of-type(1) {
+	margin: 45px auto 0 auto;
+}
+
+.intro_heading  {
+	font-family: "adelle-sans",sans-serif;
+	font-size: 60px;
+	line-height: 1.202;
+	font-weight: 700;
+}
+.intro_text {
+  margin-top: 30px; 
+  font-size: 16px;
+  font-family: "Adelle Sans";
+}
+
+/*=========================
+INTRESTS & AWARDS 
+==========================*/
+
+.block:nth-of-type(2) {
+	margin-top: 30px; 
+}
+
+.section-header {
+	width: 80%;
+	display: block;
+}
+
+.line {
+  display: none;
+}
+
+.int_awards_items{
+	margin-top: 30px;
+}
+
+.int_awards_items img {
+	display: none;
+	position: relative;
+	left: -5px;
+}
+
+.int_awards_items div {
+	margin-top: 20px;
+	text-align: center;
+	display: inline-block;
+}
+
+.int_awards_items div:nth-of-type(1) {
+	background-color: tomato;
+	display: block;
+}
+
+.int_awards_items div:nth-of-type(1) p {
+	display: inline-block;
+	font-size: 18px;
+}
+
+.int_awards_items div:nth-of-type(2),
+.int_awards_items div:nth-of-type(3),
+.int_awards_items div:nth-of-type(4),
+.int_awards_items div:nth-of-type(5){
+	background-color: lightblue;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	width: 49.3%;
+	margin-top: 15px;
+}
+
+.int_awards_items div:nth-of-type(2) p,
+.int_awards_items div:nth-of-type(3) p,
+.int_awards_items div:nth-of-type(4) p,
+.int_awards_items div:nth-of-type(5) p{
+	display: inline-block;
+	font-size: 20px;
+	position: relative;
+	bottom: 5px;
+}
+
+.int_awards_items div:nth-of-type(3) p,
+.int_awards_items div:nth-of-type(4) p,
+.int_awards_items div:nth-of-type(5) p{
+	margin-left: 15px;
+}
+
+.int_awards_items div:nth-of-type(3) p {
+	margin-left: 30px;
+}
+
+.int_awards_items [class^="icon"] { /*This controls the icon sizes within the intersets and awards section*/
+	font-size: 30px;
+}
+
+
+/*=========================
+SKILLS
+==========================*/
+
+.block:nth-of-type(3) {
+	margin: 45px auto 0 auto;
+}
+
+
+.left-skills {
+	margin-top: 30px;
+}
+
+.skill_block {
+	display: block;
+}
+
+.title {
+	display: inline-block;
+	position: relative;
+	bottom: 7px;
+	width: 76px;
+	font-size: 20px;
+}
+
+
+.skill {
+	display: inline-block;
+	margin-left: 20px;
+	padding: 0;
+	margin: 20px 0 0 15px;
+}
+
+.skill li {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #313131;
+	border-radius: 15px;
+	margin-right: 3px;
+}
+
+.fill {
+	background-color: #313131;
+}
+
+/*=========================
+EXPERIENCE
+==========================*/
+
+.block:nth-of-type(4) {
+	margin: 45px auto 0 auto;
+}
+
+.block:nth-of-type(5),
+.block:nth-of-type(6),
+.block:nth-of-type(7) {
+	margin: 54px auto 42px auto;
+}
+
+.title_item {
+	margin-bottom: 45px;
+	font-weight: 700;
+}
+
+.description_item {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+
+
+/*=========================
+INTRO CONTAINER 
+==========================*/
+
+.block:nth-of-type(8),
+.block:nth-of-type(9),
+.block:nth-of-type(10) {
+	margin: 54px auto 42px auto;
+}
+
+
+
+/*=========================
+MEDIA QUERIES 
+==========================*/
+
+
+@media screen and (min-width: 540px) {
+
+.heading-container {
+	margin: 71px auto 0 auto;
+	width: 478px;
+}
+
+.hello_heading, .intro_heading {
+	font-family: "adelle-sans",sans-serif;
+	font-size: 90px;
+	line-height: 1.202;
+}
+
+nav {
+	width: 477px;
+	margin: 65px auto 65px auto;
+	padding: 0;
+}
+
+nav ul {
+	padding: 0;
+}
+
+nav li {
+	display: block;
+	border-left: 2px solid;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    border-top: 0;
+    text-align: center;
+}
+
+nav li:nth-child(1) {
+    border-top: 2px solid;
+}
+
+nav li a {
+	padding: 18px;
+	display: block;
+	font-family: "adelle-sans",sans-serif;
+	font-size: 19px;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	background-color: #313131;
+	color: white; 
+}
+
+.block {
+	width: 478px;
+	margin: 0 auto;
+}
+
+.line {
+  width: 33%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  left: 10px;
+  top: -2px;
+  border: 1px solid black;
+}
+
+.Donec_sodales_nulla_vel_ante_ultricies__a_conse {
+  font-size: 18px;
+  font-family: "Adelle Sans";
+  color: rgb(49, 49, 49);
+  line-height: 2.4;
+  text-align: justifyLeft;
+  position: absolute;
+  left: 81.846px;
+  top: 752.622px;
+  width: 474px;
+  height: 101px;
+  z-index: 20;
+}
+
+
+
+} /*END OF MEDIA QUERIES*/
+
+
+
+
+
+
+
